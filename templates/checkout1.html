@@ -1,0 +1,48 @@
+
+{% block title %}CHEP PAYMENT METHOD / Checkout1{% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1>CHEP PAYMENT METHOD / checkout1</h1>
+      <hr>
+
+      <form action="/checkout1" method="POST">
+
+        <div class="form-group">
+          <label>Credit Card Number</label>
+          <input type="number" class="form-control" id="CreditCardNumber" name="CreditCardNumber" placeholder="Enter your Card Number">
+        </div>
+
+        <div class="form-group">
+          <label>Card Holder</label>
+          <input type="text" class="form-control" id="card holder" name="card_holder" placeholder="Enter your Name">
+        </div>
+
+        <div class="form-group">
+          <label>Expiration Date</label>
+          <input type="date" class="form-control" id="expiration date" name="expiration_date" placeholder="Enter your Expiration Date">
+        </div>
+
+        <div class="form-group">
+          <label>Security Code / CVC</label>
+          <input type="password" class="form-control" id="security code" name="security_code" placeholder="Enter your cvc">
+        </div>
+
+        <div class="form-group">
+          <label>Amount(USD)</label>
+          <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter your Amount">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Process</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

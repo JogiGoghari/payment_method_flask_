@@ -1,0 +1,27 @@
+{% block title %}payment{% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1>payment</h1>
+      <hr>
+
+      <form action="/payment" method="POST">
+
+        <div class="form-group">
+          <label>Amount(USD)</label>
+          <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter your Amount">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Process</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
